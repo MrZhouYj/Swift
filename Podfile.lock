@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - MBProgressHUD (0.9.2)
   - SDAutoLayout (2.1.4)
   - SDWebImage (3.8.1):
@@ -8,16 +23,18 @@ PODS:
   - SDWebImage/Core (3.8.1)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
   - MBProgressHUD (~> 0.9.2)
   - SDAutoLayout (~> 2.1.4)
   - SDWebImage-Category (~> 1.4)
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   SDAutoLayout: 1b2926b193a63287f473dae426ed07861e21e271
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SDWebImage-Category: 1f1c00880a538f7faf5b726e1559cf1ca555c553
 
-PODFILE CHECKSUM: 57a9bdf6c6190456f02c3b5d9bbe04ca8b10289d
+PODFILE CHECKSUM: c36d8ab0e5211fcd15b93537ab96862a8624877b
 
 COCOAPODS: 1.0.1

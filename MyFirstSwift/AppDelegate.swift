@@ -10,11 +10,6 @@ import UIKit
 
 
 
- let MainScreenWidth = UIScreen.mainScreen().bounds.size.width
-
- let MainScreenHeight = UIScreen.mainScreen().bounds.size.height
-
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -23,6 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     
+        
+        
+      
+        
+        
+        
+        
         
         
         self.window = UIWindow(frame:UIScreen.mainScreen().bounds)

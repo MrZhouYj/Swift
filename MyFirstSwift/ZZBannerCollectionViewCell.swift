@@ -18,8 +18,6 @@ class ZZBannerCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-    
-        print("走这里")
         
         self.imageVie=UIImageView()
         
@@ -34,8 +32,7 @@ class ZZBannerCollectionViewCell: UICollectionViewCell {
         
         imageVie!.sd_setImageWithURL(NSURL.init(string: imageUrl as String)) {
             (image:UIImage!, error:NSError!, SDImageCacheTypeNone, url:NSURL!) in
-            
-            print("下载完成")
+          
         }
     }
     

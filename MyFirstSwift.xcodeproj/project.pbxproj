@@ -19,25 +19,27 @@
 		AB3BFBE61D49AB2F00B27C2A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3BFBE51D49AB2F00B27C2A /* RootViewController.swift */; };
 		AB3BFBE81D49D3DB00B27C2A /* ZZBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3BFBE71D49D3DB00B27C2A /* ZZBannerView.swift */; };
 		AB3BFBEA1D49D4A200B27C2A /* ZZBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3BFBE91D49D4A200B27C2A /* ZZBannerCollectionViewCell.swift */; };
+		AB982BAF1D4F087700D52E34 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB982BAE1D4F087700D52E34 /* Header.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		443667125B8B86FAEC6C5DCB /* Pods-MyFirstSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFirstSwift/Pods-MyFirstSwift.release.xcconfig"; sourceTree = "<group>"; };
 		AB3BFBC21D48C2B100B27C2A /* MyFirstSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB3BFBC51D48C2B100B27C2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB3BFBC51D48C2B100B27C2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		AB3BFBCA1D48C2B100B27C2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB3BFBCC1D48C2B100B27C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB3BFBCF1D48C2B100B27C2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB3BFBD11D48C2B100B27C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB3BFBD71D48CA0C00B27C2A /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		AB3BFBD71D48CA0C00B27C2A /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyView.swift; path = ../../MyView.swift; sourceTree = "<group>"; };
 		AB3BFBD91D48CB9B00B27C2A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		AB3BFBDE1D49971400B27C2A /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bridging.h; path = ../Bridging.h; sourceTree = "<group>"; };
-		AB3BFBDF1D49A00E00B27C2A /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		AB3BFBE11D49A09300B27C2A /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		AB3BFBE31D49A09C00B27C2A /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		AB3BFBE51D49AB2F00B27C2A /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		AB3BFBE71D49D3DB00B27C2A /* ZZBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZBannerView.swift; sourceTree = "<group>"; };
-		AB3BFBE91D49D4A200B27C2A /* ZZBannerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB3BFBDE1D49971400B27C2A /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bridging.h; path = ../../Bridging.h; sourceTree = "<group>"; };
+		AB3BFBDF1D49A00E00B27C2A /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = ../TabBarViewController.swift; sourceTree = "<group>"; };
+		AB3BFBE11D49A09300B27C2A /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = ../../FirstViewController.swift; sourceTree = "<group>"; };
+		AB3BFBE31D49A09C00B27C2A /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../SecondViewController.swift; sourceTree = "<group>"; };
+		AB3BFBE51D49AB2F00B27C2A /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = ../RootViewController.swift; sourceTree = "<group>"; };
+		AB3BFBE71D49D3DB00B27C2A /* ZZBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZZBannerView.swift; path = ../../ZZBannerView.swift; sourceTree = "<group>"; };
+		AB3BFBE91D49D4A200B27C2A /* ZZBannerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZZBannerCollectionViewCell.swift; path = ../../ZZBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB982BAE1D4F087700D52E34 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		B36ECB8ED95AC7D89FAC27F6 /* libPods-MyFirstSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyFirstSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAFE494B170EE1AE1047E54 /* Pods-MyFirstSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFirstSwift/Pods-MyFirstSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,22 +94,87 @@
 		AB3BFBC41D48C2B100B27C2A /* MyFirstSwift */ = {
 			isa = PBXGroup;
 			children = (
-				AB3BFBDE1D49971400B27C2A /* Bridging.h */,
-				AB3BFBC51D48C2B100B27C2A /* AppDelegate.swift */,
-				AB3BFBE51D49AB2F00B27C2A /* RootViewController.swift */,
-				AB3BFBE11D49A09300B27C2A /* FirstViewController.swift */,
-				AB3BFBE31D49A09C00B27C2A /* SecondViewController.swift */,
-				AB3BFBD71D48CA0C00B27C2A /* MyView.swift */,
-				AB3BFBE71D49D3DB00B27C2A /* ZZBannerView.swift */,
-				AB3BFBE91D49D4A200B27C2A /* ZZBannerCollectionViewCell.swift */,
+				AB982BAD1D4EE15000D52E34 /* CommondClass */,
+				AB982BA61D4EE0F800D52E34 /* Main */,
+				AB982BA71D4EE0F800D52E34 /* Message */,
+				AB982BA81D4EE0F800D52E34 /* MySelf */,
+				AB982BA91D4EE0F800D52E34 /* Order */,
+				AB982BAA1D4EE0F800D52E34 /* Other */,
 				AB3BFBC91D48C2B100B27C2A /* Main.storyboard */,
 				AB3BFBCC1D48C2B100B27C2A /* Assets.xcassets */,
 				AB3BFBCE1D48C2B100B27C2A /* LaunchScreen.storyboard */,
 				AB3BFBD11D48C2B100B27C2A /* Info.plist */,
 				AB3BFBD91D48CB9B00B27C2A /* PrefixHeader.pch */,
-				AB3BFBDF1D49A00E00B27C2A /* TabBarViewController.swift */,
 			);
 			path = MyFirstSwift;
+			sourceTree = "<group>";
+		};
+		AB982BA61D4EE0F800D52E34 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AB982BAB1D4EE12300D52E34 /* controller */,
+				AB982BAC1D4EE12300D52E34 /* view */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AB982BA71D4EE0F800D52E34 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		AB982BA81D4EE0F800D52E34 /* MySelf */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MySelf;
+			sourceTree = "<group>";
+		};
+		AB982BA91D4EE0F800D52E34 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				AB3BFBE31D49A09C00B27C2A /* SecondViewController.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		AB982BAA1D4EE0F800D52E34 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		AB982BAB1D4EE12300D52E34 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB3BFBE11D49A09300B27C2A /* FirstViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AB982BAC1D4EE12300D52E34 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				AB3BFBD71D48CA0C00B27C2A /* MyView.swift */,
+				AB3BFBE71D49D3DB00B27C2A /* ZZBannerView.swift */,
+				AB3BFBE91D49D4A200B27C2A /* ZZBannerCollectionViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AB982BAD1D4EE15000D52E34 /* CommondClass */ = {
+			isa = PBXGroup;
+			children = (
+				AB3BFBDE1D49971400B27C2A /* Bridging.h */,
+				AB3BFBC51D48C2B100B27C2A /* AppDelegate.swift */,
+				AB982BAE1D4F087700D52E34 /* Header.swift */,
+				AB3BFBDF1D49A00E00B27C2A /* TabBarViewController.swift */,
+				AB3BFBE51D49AB2F00B27C2A /* RootViewController.swift */,
+			);
+			path = CommondClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB3BFBEA1D49D4A200B27C2A /* ZZBannerCollectionViewCell.swift in Sources */,
+				AB982BAF1D4F087700D52E34 /* Header.swift in Sources */,
 				AB3BFBE81D49D3DB00B27C2A /* ZZBannerView.swift in Sources */,
 				AB3BFBE41D49A09C00B27C2A /* SecondViewController.swift in Sources */,
 				AB3BFBE21D49A09300B27C2A /* FirstViewController.swift in Sources */,

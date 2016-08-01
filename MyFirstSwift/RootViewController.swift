@@ -15,12 +15,6 @@ class RootViewController: UIViewController {
 
        self.view.backgroundColor=UIColor.whiteColor()
         
-        
-        
-        let verson = UIDevice.currentDevice().systemVersion
-        
-        print("\(verson)")
-        
         switch UIDevice.currentDevice().systemVersion.compare("7.0.0", options: NSStringCompareOptions.NumericSearch) {
             
         case .OrderedSame, .OrderedDescending:
@@ -38,6 +32,10 @@ class RootViewController: UIViewController {
         }
     }
 
-   
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
 
 }

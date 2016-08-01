@@ -13,8 +13,8 @@ import UIKit
 class ZZBannerView: UIView,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate{
     
     enum ZZBannerViewScrollDirection {
-        case GGBannerViewScrollDirectionVertical
-        case GGBannerViewScrollDirectionHorizontal
+        case Vertical
+        case Horizontal
     }
     
      var imagesArray:NSArray?
@@ -23,11 +23,13 @@ class ZZBannerView: UIView,UICollectionViewDelegate,UICollectionViewDataSource,U
     
      var timer:NSTimer?
     
-    var interval:NSTimeInterval{
+    var _interval:NSTimeInterval?
+    
+    var interval:NSTimeInterval?{
         
-        set{
+        set(newVal){
             
-            
+          _interval=newVal
             
             addTimer()
             
@@ -35,7 +37,7 @@ class ZZBannerView: UIView,UICollectionViewDelegate,UICollectionViewDataSource,U
         
         get{
             
-            return self.interval
+            return _interval
         }
     }
     
@@ -46,7 +48,7 @@ class ZZBannerView: UIView,UICollectionViewDelegate,UICollectionViewDataSource,U
             return
         }
         
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(self.interval, target: self, selector: #selector(changePage), userInfo: nil, repeats: true)
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(_interval!, target: self, selector: #selector(changePage), userInfo: nil, repeats: true)
         
         NSRunLoop.currentRunLoop().addTimer(self.timer!, forMode: NSRunLoopCommonModes)
     }
@@ -57,12 +59,12 @@ class ZZBannerView: UIView,UICollectionViewDelegate,UICollectionViewDataSource,U
         
         var newOffset:CGFloat = offset+MainScreenWidth
         
-        if newOffset == offset-MainScreenWidth {
+        if newOffset == collectionView.contentSize.width-MainScreenWidth {
             
             newOffset+=1
         }
         
-        collectionView.setContentOffset(CGPointMake(newOffset, 0), animated: false)
+        collectionView.setContentOffset(CGPointMake(newOffset, 0), animated: true)
         
     }
     
@@ -104,7 +106,7 @@ class ZZBannerView: UIView,UICollectionViewDelegate,UICollectionViewDataSource,U
     
     lazy var collectionView:UICollectionView = {
         
-       let coll = UICollectionView.init(frame: self.bounds, collectionViewLayout: self.flowLayout)
+       let coll = UICollectionView(frame: self.bounds, collectionViewLayout: self.flowLayout)
         
           coll.delegate=self
           coll.dataSource=self
@@ -154,16 +156,19 @@ class ZZBannerView: UIView,UICollectionViewDelegate,UICollectionViewDataSource,U
          self.addConstraint(NSLayoutConstraint.init(item: collectionView, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0))
         
         self.addConstraint(NSLayoutConstraint.init(item: pageController, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0))
-        self.addConstraint(NSLayoutConstraint.init(item: pageController, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: -10))
+        self.addConstraint(NSLayoutConstraint.init(item: pageController, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0))
         self.addConstraint(NSLayoutConstraint.init(item: pageController, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Width, multiplier: 1.0, constant: 0))
+       
 
         
      
-        self.interval=1
+        self.interval=2
         
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        print(self.imagesArray?.count)
         
         return (self.imagesArray?.count)!+1
     }
@@ -201,7 +206,7 @@ class ZZBannerView: UIView,UICollectionViewDelegate,UICollectionViewDataSource,U
         self.imagesArray=imageArr
         
         pageController.numberOfPages = self.imagesArray!.count
-        
+                
         self.collectionView.reloadData()
     }
     
@@ -231,8 +236,19 @@ class ZZBannerView: UIView,UICollectionViewDelegate,UICollectionViewDataSource,U
                 collect.scrollToItemAtIndexPath(NSIndexPath.init(forRow: 0, inSection: 0), atScrollPosition: UICollectionViewScrollPosition.None, animated: false)
             }
         }
+        
+        let index:Int = Int(offset/MainScreenWidth)
+        
+        if index>=self.imagesArray?.count {
+            
+            pageController.currentPage = 0
+            
+        }else{
+            
+            pageController.currentPage = Int(offset/MainScreenWidth)
+        }
 
-        pageController.currentPage = Int(offset/MainScreenWidth)
+        
 
         self.oldOffsetLength = offset
         
