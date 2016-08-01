@@ -19,6 +19,8 @@
 
 #import "UIImageView+LK.h"
 
+#import "AFNetworking.h"
+
 #import "UIImageView+WebCache.h"
 
 #endif /* Bridging_h */

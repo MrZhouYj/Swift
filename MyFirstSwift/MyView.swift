@@ -58,7 +58,7 @@ class MyView: UIView {
         .leftEqualToView(self)
         .widthRatioToView(self,0.4)
         
-        let tap:UITapGestureRecognizer=UITapGestureRecognizer.init(target: self, action: #selector(LeftViewJump))
+        let tap:UITapGestureRecognizer=UITapGestureRecognizer.init(target: self, action: "LeftViewJump")
         
         leftView.addGestureRecognizer(tap)
         

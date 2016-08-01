@@ -48,7 +48,7 @@ class ZZBannerView: UIView,UICollectionViewDelegate,UICollectionViewDataSource,U
             return
         }
         
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(_interval!, target: self, selector: #selector(changePage), userInfo: nil, repeats: true)
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(_interval!, target: self, selector:"changePage", userInfo: nil, repeats: true)
         
         NSRunLoop.currentRunLoop().addTimer(self.timer!, forMode: NSRunLoopCommonModes)
     }
